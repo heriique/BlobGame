@@ -1,0 +1,95 @@
+﻿  concaveman.cpp
+c:\users\eric\dropbox\visual studio 2017\projects\blobgame\blobgame\concaveman.cpp(34): warning C4018: '<': signed/unsigned mismatch
+c:\users\eric\dropbox\visual studio 2017\projects\blobgame\blobgame\concaveman.cpp(43): warning C4018: '<': signed/unsigned mismatch
+c:\users\eric\dropbox\visual studio 2017\projects\blobgame\blobgame\concaveman.cpp(58): warning C4018: '<': signed/unsigned mismatch
+c:\users\eric\dropbox\visual studio 2017\projects\blobgame\blobgame\concaveman.h(216): error C2668: 'make_unique': ambiguous call to overloaded function
+  c:\users\eric\dropbox\visual studio 2017\projects\blobgame\blobgame\concaveman.h(28): note: could be 'std::unique_ptr<rtree<T,2,16,circ_elem_ptr_type>,std::default_delete<_Ty>> make_unique<rtree<T,2,16,circ_elem_ptr_type>,CircularElement<node_type>*&,const std::array<T,4>&>(CircularElement<node_type> *&,const std::array<T,4> &)'
+          with
+          [
+              T=T,
+              _Ty=rtree<T,2,16,circ_elem_ptr_type>
+          ]
+  d:\visual studio community\vc\tools\msvc\14.16.27023\include\memory(2537): note: or       'std::unique_ptr<rtree<T,2,16,circ_elem_ptr_type>,std::default_delete<_Ty>> std::make_unique<rtree<T,2,16,circ_elem_ptr_type>,CircularElement<node_type>*&,const std::array<T,4>&,0>(CircularElement<node_type> *&,const std::array<T,4> &)' [found using argument-dependent lookup]
+          with
+          [
+              T=T,
+              _Ty=rtree<T,2,16,circ_elem_ptr_type>
+          ]
+  c:\users\eric\dropbox\visual studio 2017\projects\blobgame\blobgame\concaveman.h(216): note: while trying to match the argument list '(CircularElement<node_type> *, const std::array<T,4>)'
+          with
+          [
+              T=T
+          ]
+  c:\users\eric\dropbox\visual studio 2017\projects\blobgame\blobgame\concaveman.h(210): note: while compiling class template member function 'void rtree<T,2,16,circ_elem_ptr_type>::insert(CircularElement<node_type> *,const std::array<T,4> &)'
+          with
+          [
+              T=T
+          ]
+  c:\users\eric\dropbox\visual studio 2017\projects\blobgame\blobgame\concaveman.h(613): note: see reference to function template instantiation 'void rtree<T,2,16,circ_elem_ptr_type>::insert(CircularElement<node_type> *,const std::array<T,4> &)' being compiled
+          with
+          [
+              T=T
+          ]
+  c:\users\eric\dropbox\visual studio 2017\projects\blobgame\blobgame\concaveman.h(609): note: see reference to class template instantiation 'rtree<T,2,16,circ_elem_ptr_type>' being compiled
+          with
+          [
+              T=T
+          ]
+  c:\users\eric\dropbox\visual studio 2017\projects\blobgame\blobgame\concaveman.cpp(51): note: see reference to function template instantiation 'std::vector<point_type,std::allocator<_Ty>> concaveman<T,16>(const std::vector<_Ty,std::allocator<_Ty>> &,const std::vector<int,std::allocator<int>> &,T,T)' being compiled
+          with
+          [
+              _Ty=point_type,
+              T=T
+          ]
+c:\users\eric\dropbox\visual studio 2017\projects\blobgame\blobgame\concaveman.h(217): error C3536: 'r': cannot be used before it is initialized
+c:\users\eric\dropbox\visual studio 2017\projects\blobgame\blobgame\concaveman.h(217): error C2664: 'void std::list<std::unique_ptr<rtree<T,2,16,circ_elem_ptr_type>,std::default_delete<_Ty>>,std::allocator<std::unique_ptr<_Ty,std::default_delete<_Ty>>>>::push_back(const std::unique_ptr<_Ty,std::default_delete<_Ty>> &)': cannot convert argument 1 from 'int' to '_Ty &&'
+          with
+          [
+              T=T,
+              _Ty=rtree<T,2,16,circ_elem_ptr_type>
+          ]
+          and
+          [
+              _Ty=std::unique_ptr<rtree<T,2,16,circ_elem_ptr_type>,std::default_delete<rtree<T,2,16,circ_elem_ptr_type>>>
+          ]
+  c:\users\eric\dropbox\visual studio 2017\projects\blobgame\blobgame\concaveman.h(217): note: Reason: cannot convert from 'int' to '_Ty'
+          with
+          [
+              _Ty=std::unique_ptr<rtree<T,2,16,circ_elem_ptr_type>,std::default_delete<rtree<T,2,16,circ_elem_ptr_type>>>
+          ]
+  c:\users\eric\dropbox\visual studio 2017\projects\blobgame\blobgame\concaveman.h(217): note: No constructor could take the source type, or constructor overload resolution was ambiguous
+c:\users\eric\dropbox\visual studio 2017\projects\blobgame\blobgame\concaveman.h(238): error C2668: 'make_unique': ambiguous call to overloaded function
+  c:\users\eric\dropbox\visual studio 2017\projects\blobgame\blobgame\concaveman.h(28): note: could be 'std::unique_ptr<rtree<T,2,16,circ_elem_ptr_type>,std::default_delete<_Ty>> make_unique<rtree<T,2,16,circ_elem_ptr_type>,CircularElement<node_type>*,const std::array<T,4>&>(CircularElement<node_type> *&&,const std::array<T,4> &)'
+          with
+          [
+              T=T,
+              _Ty=rtree<T,2,16,circ_elem_ptr_type>
+          ]
+  d:\visual studio community\vc\tools\msvc\14.16.27023\include\memory(2537): note: or       'std::unique_ptr<rtree<T,2,16,circ_elem_ptr_type>,std::default_delete<_Ty>> std::make_unique<rtree<T,2,16,circ_elem_ptr_type>,CircularElement<node_type>*,const std::array<T,4>&,0>(CircularElement<node_type> *&&,const std::array<T,4> &)' [found using argument-dependent lookup]
+          with
+          [
+              T=T,
+              _Ty=rtree<T,2,16,circ_elem_ptr_type>
+          ]
+  c:\users\eric\dropbox\visual studio 2017\projects\blobgame\blobgame\concaveman.h(239): note: while trying to match the argument list '(CircularElement<node_type> *, const std::array<T,4>)'
+          with
+          [
+              T=T
+          ]
+c:\users\eric\dropbox\visual studio 2017\projects\blobgame\blobgame\concaveman.h(242): error C3536: 'leaf': cannot be used before it is initialized
+c:\users\eric\dropbox\visual studio 2017\projects\blobgame\blobgame\concaveman.h(242): error C2664: 'void std::list<std::unique_ptr<rtree<T,2,16,circ_elem_ptr_type>,std::default_delete<_Ty>>,std::allocator<std::unique_ptr<_Ty,std::default_delete<_Ty>>>>::push_back(const std::unique_ptr<_Ty,std::default_delete<_Ty>> &)': cannot convert argument 1 from 'int' to '_Ty &&'
+          with
+          [
+              T=T,
+              _Ty=rtree<T,2,16,circ_elem_ptr_type>
+          ]
+          and
+          [
+              _Ty=std::unique_ptr<rtree<T,2,16,circ_elem_ptr_type>,std::default_delete<rtree<T,2,16,circ_elem_ptr_type>>>
+          ]
+  c:\users\eric\dropbox\visual studio 2017\projects\blobgame\blobgame\concaveman.h(242): note: Reason: cannot convert from 'int' to '_Ty'
+          with
+          [
+              _Ty=std::unique_ptr<rtree<T,2,16,circ_elem_ptr_type>,std::default_delete<rtree<T,2,16,circ_elem_ptr_type>>>
+          ]
+  c:\users\eric\dropbox\visual studio 2017\projects\blobgame\blobgame\concaveman.h(242): note: No constructor could take the source type, or constructor overload resolution was ambiguous

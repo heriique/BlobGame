@@ -1,0 +1,26 @@
+ideas:
+
+to draw blob, need:
+
+  map of distance to edge
+    with opengl, hopefully
+    for every point, compute dist to all
+    edges, then pick lowest value or weighted avg of closest 2 or all.
+	triangulate points, then phong shade the mesh
+http://geomalgorithms.com/a02-_lines.html
+  fragment inside or outside blob
+https://stackoverflow.com/questions/25463015/black-out-everything-outside-a-polygon
+  draw color for all inside fragments, lighter
+  near edge
+  later: find dist to edge in direction of light source, add spec lighting
+
+  pointy edge: instead of adding particles, add points to hull and smoothen
+    -is shrinking a problem? can have particles outside edge?
+
+	https://github.com/mapbox/concaveman instead of vostreltsov? lots of porting from js, but looks fast.
+	http://docs.pointclouds.org/trunk/classpcl_1_1_concave_hull.html
+	https://www.codeproject.com/Articles/1201438/The-Concave-Hull-of-a-Set-of-Points
+
+	http://www.geosensor.net/papers/duckham08.PR.pdf
+
+make hullfinder3 with only convex hull and b2Vec2

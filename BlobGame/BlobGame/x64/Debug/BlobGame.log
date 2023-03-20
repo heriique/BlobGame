@@ -1,0 +1,4 @@
+﻿C:\Users\Eric\Dropbox\Visual Studio 2017\Projects\BlobGame\BlobGame\core.vs(1,2-8): error X1504: invalid preprocessor command 'version'
+C:\Users\Eric\Dropbox\Visual Studio 2017\Projects\BlobGame\BlobGame\core.vs(2,1-6): error X3000: unrecognized identifier 'layout'
+  
+  compilation failed; no code produced
